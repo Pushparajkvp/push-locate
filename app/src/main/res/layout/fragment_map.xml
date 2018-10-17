@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pushparaj.firebasenotification.MapFragmentClass">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/enter_name_to_search"
+            android:focusableInTouchMode="true"
+            android:id="@+id/editTextSearch"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/searchs"
+            android:id="@+id/buttonSearchName"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextSearch"/>
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonSearchName"
+            android:id="@+id/mapFragment" />
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pushparaj.firebasenotification.AccountSettings">
+
+    <include layout="@layout/toolbar_layout" android:id="@+id/toolbar_id"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/earth"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/circular_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circular_image"
+                android:id="@+id/txt_display_name"
+                android:text="@string/default_name"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_display_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:text="@string/default_status"
+                android:textSize="18sp"
+                android:id="@+id/txt_status"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/change_pic"
+                android:layout_below="@+id/txt_status"
+                android:layout_marginTop="40dp"
+                android:onClick="ChangePicClicked"
+                android:id="@+id/button_Change_Pic"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/change_stauts"
+                android:layout_below="@+id/button_Change_Pic"
+                android:layout_marginTop="20dp"
+                android:id="@+id/button_change_status"
+                android:onClick="ChangeStatusClicked"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Push Locate</string>
+    <string name="enter_email_id">Email Id</string>
+    <string name="enter_the_password">password</string>
+    <string name="register">Register</string>
+    <string name="welcome_to_the_start_page">Welcome To Push Locate</string>
+    <string name="new_user">New User?</string>
+    <string name="existing_user">Existing user?</string>
+    <string name="log_out">Log Out</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="default_status">This is a default status</string>
+    <string name="default_name">Default name</string>
+    <string name="change_pic">Change Picture</string>
+    <string name="change_stauts">Change Status</string>
+    <string name="display_name">Display Name</string>
+    <string name="status">Status</string>
+    <string name="update">Update</string>
+    <string name="all_users">All Users</string>
+    <string name="send_request">Send Request</string>
+    <string name="decline">Decline</string>
+    <string name="searchNAme">Enter The Name To Search</string>
+    <string name="search">Search</string>
+    <string name="enter_name_to_search">Enter Name To Search</string>
+    <string name="searchs">Search</string>
+    <string name="show_requests">Show Requests</string>
+    <string name="requests">Requests</string>
+    <string name="send_sos_alert">SOS</string>
+</resources>
