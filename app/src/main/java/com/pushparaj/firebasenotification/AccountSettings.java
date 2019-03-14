@@ -52,14 +52,17 @@ public class AccountSettings extends AppCompatActivity {
     DatabaseReference mRef;
     StorageReference mStorageRef;
     FirebaseUser user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_settings);
+
         //fields
         circleImageView = (CircleImageView)findViewById(R.id.circular_image);
         txtStatus = (TextView)findViewById(R.id.txt_status);
         txtDisplayName=(TextView)findViewById(R.id.txt_display_name);
+
         //Toolbar setup
         mToolbar = (Toolbar)findViewById(R.id.toolbar_id);
         setSupportActionBar(mToolbar);
@@ -67,7 +70,9 @@ public class AccountSettings extends AppCompatActivity {
             getSupportActionBar().setTitle("Account Settings");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
         mProgress = new ProgressDialog(this);
+
         //firebase
         mStorageRef = FirebaseStorage.getInstance().getReference();
         user = FirebaseAuth.getInstance().getCurrentUser();
